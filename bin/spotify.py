@@ -135,7 +135,8 @@ def run_script():
                 item['track']['artists'][idx] = artist
 
             if item['context'] != "null":
-                del item['context']['href']
+                if 'href' in item['context']:
+                    del item['context']['href']
 
             print(json.dumps(item, sort_keys=True))
             save_checkpoint(config, "after", item['track']['id'])
@@ -191,7 +192,8 @@ def run_script():
             del data['progress_ms']
 
             if data['context'] != "null":
-                del data['context']['href']
+        	    if 'href' in data['context']:
+        	        del data['context']['href']
 
             print(json.dumps(data, sort_keys=True))
             save_checkpoint(config, "after", track['id'])
