@@ -134,7 +134,7 @@ def run_script():
                 artist['followers'] = artist_data['followers']
                 item['track']['artists'][idx] = artist
 
-            if item['context'] != "null":
+            if item['context'] != "null" and item['context'] is not None::
                 if 'href' in item['context']:
                     del item['context']['href']
 
@@ -191,7 +191,7 @@ def run_script():
             del data['is_playing']
             del data['progress_ms']
 
-            if data['context'] != "null":
+            if data['context'] != "null" and data['context'] is not None:
         	    if 'href' in data['context']:
         	        del data['context']['href']
 
