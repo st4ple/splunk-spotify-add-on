@@ -1,8 +1,8 @@
-# :headphones::electric_plug: Spotify Add-on for Splunk
-> **WARNING**: This Splunk TA is still under construction. Future updates might break existing setups so proceed with care! 
+# :headphones::electric_plug: Spotify TA for Splunk
+> **WARNING**: This TA is still under construction. Future updates might break existing setups so proceed with care! 
 
 ## Installation
-### Via GIT:
+#### via GIT:
 Clone this repository to $SPLUNK_HOME/etc/apps/ on an Indexer or Heavy Forwarder and restart Splunk.
 
 ````
@@ -10,14 +10,16 @@ $ git clone https://github.com/st4ple/splunk-spotify-add-on.git
 $ splunk restart
 ````
 
-#### Via Splunk UI:
+#### via Splunk UI:
 
-Download the [ZIP directory of this repository](https://github.com/st4ple/splunk-spotify-add-on/archive/master.zip) and upload it to your Splunk instance via `Apps->Manage Apps->Install App from File`.
+Download the [.zip of this repository](https://github.com/st4ple/splunk-spotify-add-on/archive/master.zip) and upload it to your Splunk instance via 
+
+`Apps -> Manage Apps -> Install App from File`.
 
 
 ## Configuration 
 
-Follow the step-by-step guide here: [# :headphones::key: Spotify for Splunk * auth-helper](https://st4ple.github.io/splunk-spotify-auth-helper/)
+Follow the step-by-step guide here: [:headphones::key: Spotify for Splunk * auth-helper](https://st4ple.github.io/splunk-spotify-auth-helper/)
 
 ## Example event:
 ```json
