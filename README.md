@@ -6,7 +6,7 @@
 Clone this repository to $SPLUNK_HOME/etc/apps/ on an Indexer or Heavy Forwarder and restart Splunk.
 
 ````
-$ git clone https://github.com/st4ple/splunk-spotify-add-on.git
+$ git clone https://github.com/st4ple/splunk-spotify-add-on.git spotify-TA
 $ splunk restart
 ````
 
